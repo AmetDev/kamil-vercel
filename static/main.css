@@ -6,7 +6,7 @@
 @import url(bot.css); /*стили бота*/
 @import url(text-and-button-artist.css); /*стили для кнопок и для карточек актеров*/
 @import url(art_char.css); /*стили для каждого актера*/
-@import url(team.css); /*стили для разработчика*/
+@import url(developer.css); /*стили для разработчика*/
 @import url(video.css); /*стили для раздела с видео*/
 @import url(copyright.css); /*стили доп .информаиця сайта*/
 @import url(footer.css); /*стили нижний колонтитул*/

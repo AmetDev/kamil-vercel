@@ -50,6 +50,11 @@
     padding-bottom: 140px;
 }
 
+
+.devel {
+    border-radius: 10px;
+}
+
 .developer_name {
     display: flex;
     justify-content: center;
