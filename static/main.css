@@ -1,13 +1,12 @@
-@import url(settings.css);
-@import url(nullstyle.css);
-@import url(header.css);
-@import url(intro.css);
-@import url(info.css);
-@import url(bot.css);
-@import url(text-and-button-artist.css);
-@import url(art_char.css);
-@import url(team.css);
-@import url(video.css);
-@import url(copyright.css);
-@import url(footer.css);
-@import url(slider.css);
+@import url(settings.css); /*настройки*/
+@import url(nullstyle.css); /*обнуление*/
+@import url(header.css); /*стили навигация*/
+@import url(intro.css); /*стили заголовок сайта*/
+@import url(info.css); /*стили доп.инфорация*/
+@import url(bot.css); /*стили бота*/
+@import url(text-and-button-artist.css); /*стили для кнопок и для карточек актеров*/
+@import url(art_char.css); /*стили для каждого актера*/
+@import url(team.css); /*стили для разработчика*/
+@import url(video.css); /*стили для раздела с видео*/
+@import url(copyright.css); /*стили доп .информаиця сайта*/
+@import url(footer.css); /*стили нижний колонтитул*/

@@ -1,4 +1,4 @@
-.team {
+.developer {
     background-color: #F6F6F8;
 }
 .container {
@@ -9,7 +9,7 @@
     padding: 0 15px;
 }
 
-.team_text {
+.developer_text {
     padding-top: 130px;
     display: flex;
     justify-content: center;
@@ -19,14 +19,14 @@
     
 }
 
-.team_title {
+.developer_title {
     font-size: 36px;
     font-weight: 700;
     color: #000;
     padding-bottom: 27px;
 }
 
-.team_subtitle {
+.developer_subtitle {
     font-family: 'Montserrat', sans-serif;
     color: #999999;
     font-weight: 400;
@@ -36,21 +36,21 @@
     padding-bottom: 40px;
 }
 
-.team_char_block {
+.developer_char_block {
     align-items: center;
-    text-aligh: center;
+    text-align: center;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.team_char {
+.developer_char {
     max-width: 255px;
     width: 100%;
     padding-bottom: 140px;
 }
 
-.team_name {
+.developer_name {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -60,12 +60,12 @@
     color: #000;
 }
 
-.team_span_numb {
+.developer_span_numb {
     font-family: 'Montserrat', sans-serif;
     color: #4985FF;
 }
 
-.team_about_us {
+.developer_about_us {
     text-align: center;    
     font-size: 16px;
     font-weight: 400;
