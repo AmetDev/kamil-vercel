@@ -6,24 +6,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-   
-    <title>SaveAnimal</title>
+  
+    <title>HelpToPets</title>
     <link rel="stylesheet" href="{{url_for('static', filename='main.css') }}"> <!--JINJA-->
+     <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='dog-icon.png') }}">
 </head>
 <body>
     <svg style="display: none">
-        <symbol id="facebook" viewBox="0 0 100 100">
+        <symbol id="vk" height="122px" width="122px" viewBox="0 0 100 100">
           <g>
             <path
-              d="M45.4617 25.8328C47.6106 23.7911 50.6527 23.0971 53.5357 23.0167C56.5787 22.99 59.6217 23.0033 62.6638 23.0033C62.6772 26.2196 62.6772 29.4224 62.6638 32.6387C60.7024 32.6387 58.7268 32.6387 56.7654 32.6387C55.5239 32.5583 54.2431 33.5059 54.0163 34.7474C53.9895 36.8963 54.0029 39.0444 54.0029 41.1933C56.8851 41.2067 59.7681 41.1933 62.6504 41.2067C62.4369 44.3157 62.0502 47.4123 61.5964 50.482C59.0474 50.5088 56.4983 50.482 53.9493 50.4954C53.9225 59.6636 53.9627 68.8184 53.9359 77.9874C50.1454 78.0008 46.3691 77.9741 42.5786 78.0008C42.5116 68.8326 42.5786 59.6644 42.5384 50.4954C40.6967 50.482 38.8417 50.5088 37 50.482C37.0134 47.3989 37 44.3166 37 41.2468C38.8417 41.22 40.6967 41.2468 42.5384 41.2334C42.592 38.2441 42.4848 35.2413 42.592 32.2519C42.7929 29.8636 43.687 27.4744 45.4617 25.8328Z"
-            />
-          </g>
-        </symbol>
-  
-        <symbol id="twitter" viewBox="0 0 100 100">
-          <g>
-            <path
-              d="M75 34.773C73.1815 35.6819 71.1367 36.1367 69.0911 36.3637C71.1367 35 72.7274 33.1823 73.6363 30.6819C71.5907 31.8185 69.5452 32.7274 67.0456 33.1815C65.227 31.1359 62.5004 30 59.546 30C53.8641 30 49.3189 34.5452 49.3189 40.227C49.3189 41.1359 49.3189 41.8177 49.546 42.4996C41.1367 42.0448 33.6371 37.9544 28.4101 31.8177C27.5012 33.4085 27.0464 34.9992 27.0464 37.0448C27.0464 40.6811 28.8649 43.6355 31.5915 45.454C30.0008 45.454 28.4101 44.9992 27.0464 44.0903V44.3174C27.0464 49.3174 30.4556 53.4085 35.2278 54.3174C34.3189 54.5444 33.4093 54.7722 32.5004 54.7722C31.8185 54.7722 31.1367 54.7722 30.6819 54.5452C32.0456 58.6363 35.6819 61.5907 40.227 61.5907C36.8177 64.3181 32.2726 65.9089 27.4996 65.9089C26.5907 65.9089 25.9089 65.9089 25 65.6819C29.5452 68.6363 34.773 70.227 40.6819 70.227C59.5452 70.227 69.7722 54.773 69.7722 41.1367V39.773C72.0456 38.6363 73.6363 36.8185 75 34.773Z"
+              d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M21.361,18.967 l-1.868,0.026c0,0-0.403,0.079-0.93-0.285c-0.699-0.48-1.358-1.729-1.872-1.567c-0.521,0.166-0.505,1.29-0.505,1.29 s0.004,0.198-0.115,0.327c-0.129,0.139-0.382,0.125-0.382,0.125h-0.837c0,0-1.846,0.153-3.473-1.543 c-1.772-1.849-3.338-5.498-3.338-5.498s-0.092-0.23,0.006-0.348c0.111-0.13,0.41-0.134,0.41-0.134l2-0.01 c0,0,0.188,0.033,0.324,0.133c0.111,0.082,0.174,0.236,0.174,0.236s0.323,0.819,0.752,1.561c0.836,1.446,1.224,1.763,1.508,1.608 c0.414-0.226,0.29-2.044,0.29-2.044s0.008-0.66-0.208-0.954c-0.168-0.229-0.484-0.297-0.622-0.314 c-0.113-0.015,0.071-0.277,0.311-0.395c0.36-0.176,0.996-0.186,1.747-0.179c0.585,0.006,0.754,0.042,0.982,0.098 c0.69,0.167,0.456,0.811,0.456,2.356c0,0.495-0.089,1.191,0.267,1.42c0.154,0.099,0.529,0.015,1.464-1.579 c0.445-0.756,0.778-1.644,0.778-1.644s0.073-0.158,0.186-0.226c0.116-0.07,0.272-0.048,0.272-0.048l2.105-0.013 c0,0,0.632-0.076,0.735,0.211c0.108,0.3-0.236,1.001-1.096,2.148c-1.412,1.884-1.569,1.709-0.396,2.799 c1.12,1.041,1.351,1.547,1.39,1.611C22.339,18.906,21.361,18.967,21.361,18.967z"
             />
           </g>
         </symbol>
@@ -69,7 +62,7 @@
     <div class="container">
       <div class="intro__inner ">
         <div class="intro__title"><span class="text_title">Мы предлагаем вам помочь бездомным животным</span></div>
-        <button class="button"><a href="https://t.me/saveanimal_bot" class="teg_text">телеграм</a></button> <!--JINJA-->
+        <button class="button"><a href="https://t.me/saveanimal_bot" class="teg_text">телеграм канал</a></button> <!--JINJA-->
 
 
       </div>
@@ -138,12 +131,12 @@
                 <div class="bot_text">
                     <div class="bot_text_inner">
                         <div class="bot_title">
-                            <span>Telegram bot</span>
+                            <span>Наш Телеграм бот!<span>
                         </div>
                         <div class="bot_subtitle">
-                            <span>Если вам небезразлична судьба бездомных животных, то перейдите, ознакомьтесь с функционалом бота и попробуйте помочь.</span> 
+                            <span>Если вам не безразлична судьба бездомных животных, то ознакомьтесь с функционалом бота и анкетами в телеграм канале, именно Вы можете сделать мир лучше:</span> 
                         </div>
-                        <a href="https://t.me/saveanimal_bot" class="bot_link">бот</a>
+                        <a href="https://t.me/saveanimal_bot" class="bot_link">бот</a> <a href="https://t.me/saveanimal_bot" class="bot_link">бот</a>
                     </div>      
                 </div>
             </div>        
@@ -157,7 +150,7 @@
         <div class="container_artist">
             <div class="content_text">
                 <span class="text_artist">Звезды, которые помогают бездомным животным</span>
-                <a href="https://t.me/saveanimal_bot" class="button">Помоги и ты!</a>
+                <a href="https://t.me/saveanimal_bot" class="button text_pomosh"><span>Помоги и ты!</span></a>
             </div>
             <div class="artist_item">
                 <div class="artist_char">
@@ -199,8 +192,8 @@
             <div class="team_char_block">
                 <div class="team_char">
                     <div class="team_icon"><img src="{{ url_for('static', filename='icon-cha01r.png') }}" alt=""></div>
-                    <div class="team_name"><span class="team_span_numb">01.</span> Шейхислямов Камиль</div>
-                    <div class="team_about_us">Full-stack Developer. Опыт в разработке 2 года.</div>
+                    <div class="team_name"><span class="team_span_numb"></span> Шейхислямов Камиль</div>
+                    <div class="team_about_us"><span class="kamil_text">Full-stack Developer. Опыт в разработке 2 года.</span></div>
                 </div>
             </div>
            
@@ -220,8 +213,6 @@
      
     </div>
     <div class="video_link_out">
-        <!-- <img class="video_link" src="/img/video/click-video.png" alt=""> -->
-        <!-- <button>click</button> -->
         <div class="video_link">
             <div class="video_btn">
                 <button class="video_btn_inner">
@@ -229,7 +220,6 @@
                 </button>
                 <div class="video_text">Смотреть видео</div>
             </div>
-            <!-- <button><a href="https://www.youtube.com/watch?v=kE0LS12c-64">button</a></button> -->
         </div>
        
     </div>
@@ -247,17 +237,13 @@
         </div>
 
         <div class="footer__block">
-          <h4 class="footer__title">Расскажи о нас</h4>
+          <h4 class="footer__title">Мы в соц.сетях</h4>
 
           <div class="social social--footer">
-            <a class="social__item" href="https://vk.com/sheykhislyamov" target="_blank">
+            
+            <a class="social__item" href="https://t.me/helptopets" target="_blank">
               <svg class="social__icon">
-                <use xlink:href="#facebook"></use>
-              </svg>
-            </a>
-            <a class="social__item" href="https://vk.com/sheykhislyamov" target="_blank">
-              <svg class="social__icon">
-                <use xlink:href="#twitter"></use>
+                <use xlink:href="#vk"></use>
               </svg>
             </a>
             <a class="social__item" href="https://vk.com/sheykhislyamov" target="_blank">
@@ -282,7 +268,7 @@
     </div>
     <div class="copyright">
         <div class="copyright__text">
-            <div>Copyright © 2022 HelptoPets.</div>
+            <div>Copyright © 2022 HelpToPets.</div>
             <div>Made with ♥ <span>by Kamil</span></div>
         </div>
     </div>

@@ -37,8 +37,10 @@
 }
 
 .team_char_block {
+    align-items: center;
+    text-aligh: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -49,6 +51,10 @@
 }
 
 .team_name {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
     font-size: 18px;
     font-weight: 700;
     color: #000;
@@ -60,9 +66,15 @@
 }
 
 .team_about_us {
+    text-align: center;    
     font-size: 16px;
     font-weight: 400;
     line-height: 25.36px;
     color: #999999;
 
+}
+
+.kamil_text {
+    align-items: center;
+    text-align: center;
 }

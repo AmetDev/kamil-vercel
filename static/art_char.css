@@ -53,3 +53,10 @@
 .liza_border {
     border-radius: 10px;
 }
+
+.text_pomosh {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+}

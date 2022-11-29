@@ -1,10 +1,10 @@
 
-    const Links = document.querySelectorAll(".nav__link")
-    console.log(Links)
+    const Links = document.querySelectorAll(".nav__link") //находим селектор и присваем его
+
+    //перебираем список(link) с помощью метода цикла foreach
+    //затем задаем значение и индекс объекта 
     Links.forEach((value, indexNav) => {
       value.addEventListener("click", function() {
-        console.log(indexNav)
-        
         const footerChar = document.querySelectorAll("#footer");
         
         footerChar.forEach((value, index1) => {
